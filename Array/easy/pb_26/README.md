@@ -1,8 +1,8 @@
-\### Remove Duplicates from Sorted Array
+### Remove Duplicates from Sorted Array
 
 
 
-Given an integer array `nums` sorted in \*\*non-decreasing\*\* order, remove the duplicates \*\*in-place\*\* such that each unique element appears only once. The relative order of the elements should be kept the same. Then return the number of unique elements in `nums`.
+Given an integer array `nums` sorted in **non-decreasing** order, remove the duplicates **in-place** such that each unique element appears only once. The relative order of the elements should be kept the same. Then return the number of unique elements in `nums`.
 
 
 
@@ -10,11 +10,11 @@ Consider the number of unique elements of `nums` to be `k`, to get accepted, you
 
 
 
-1\.  Change the array `nums` such that the first `k` elements of `nums` contain the unique elements in the order they were present in `nums` initially.
+1.  Change the array `nums` such that the first `k` elements of `nums` contain the unique elements in the order they were present in `nums` initially.
 
-2\.  The remaining elements of `nums` are not important, nor is the size of `nums`.
+2.  The remaining elements of `nums` are not important, nor is the size of `nums`.
 
-3\.  Return `k`.
+3.  Return `k`.
 
 
 
@@ -22,7 +22,7 @@ Consider the number of unique elements of `nums` to be `k`, to get accepted, you
 
 
 
-\#### Custom Judge
+#### Custom Judge
 
 
 
@@ -32,9 +32,9 @@ The judge will test your solution with the following code:
 
 ```
 
-int\[] nums = \[...]; // Input array
+int[] nums = [...]; // Input array
 
-int\[] expectedNums = \[...]; // The expected answer with correct length
+int[] expectedNums = [...]; // The expected answer with correct length
 
 
 
@@ -46,7 +46,7 @@ assert k == expectedNums.length;
 
 for (int i = 0; i < k; i++) {
 
-&nbsp;   assert nums\[i] == expectedNums\[i];
+&nbsp;   assert nums[i] == expectedNums[i];
 
 }
 
@@ -62,31 +62,31 @@ If all assertions pass, then your solution will be accepted.
 
 
 
-\#### Examples
+#### Examples
 
 
 
-\*\*Example 1:\*\*
+**Example 1:**
 
 
 
-&nbsp; - \*\*Input:\*\* `nums = \[1,1,2]`
+&nbsp; - **Input:** `nums = [1,1,2]`
 
-&nbsp; - \*\*Output:\*\* `2`, `nums = \[1,2,\_]`
+&nbsp; - **Output:** `2`, `nums = [1,2,\_]`
 
-&nbsp; - \*\*Explanation:\*\* Your function should return `k = 2`, with the first two elements of `nums` being `1` and `2` respectively. It doesn't matter what you leave beyond the returned `k` (hence the underscores).
-
-
-
-\*\*Example 2:\*\*
+&nbsp; - **Explanation:** Your function should return `k = 2`, with the first two elements of `nums` being `1` and `2` respectively. It doesn't matter what you leave beyond the returned `k` (hence the underscores).
 
 
 
-&nbsp; - \*\*Input:\*\* `nums = \[0,0,1,1,1,2,2,3,3,4]`
+**Example 2:**
 
-&nbsp; - \*\*Output:\*\* `5`, `nums = \[0,1,2,3,4,\_,\_,\_,\_,\_]`
 
-&nbsp; - \*\*Explanation:\*\* Your function should return `k = 5`, with the first five elements of `nums` being `0, 1, 2, 3, and 4` respectively. It doesn't matter what you leave beyond the returned `k`.
+
+&nbsp; - **Input:** `nums = [0,0,1,1,1,2,2,3,3,4]`
+
+&nbsp; - **Output:** `5`, `nums = [0,1,2,3,4,\_,\_,\_,\_,\_]`
+
+&nbsp; - **Explanation:** Your function should return `k = 5`, with the first five elements of `nums` being `0, 1, 2, 3, and 4` respectively. It doesn't matter what you leave beyond the returned `k`.
 
 
 
@@ -94,13 +94,13 @@ If all assertions pass, then your solution will be accepted.
 
 
 
-\#### Constraints
+#### Constraints
 
 
 
-&nbsp; - `1 <= nums.length <= 3 \* 10^4`
+&nbsp; - `1 <= nums.length <= 3 * 10^4`
 
-&nbsp; - `-100 <= nums\[i] <= 100`
+&nbsp; - `-100 <= nums[i] <= 100`
 
-&nbsp; - `nums` is sorted in \*\*non-decreasing\*\* order.
+&nbsp; - `nums` is sorted in **non-decreasing** order.
 
